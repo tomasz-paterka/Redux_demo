@@ -1,4 +1,4 @@
-# Redux_demo
+# redux_demo
 
 App created with React and Redux
 
