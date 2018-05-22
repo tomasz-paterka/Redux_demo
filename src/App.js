@@ -7,8 +7,8 @@ const App = () => {
 	return (
 		<div className='App'>
 			<h1>CommentApp</h1>
-			<CommentsList />
 			<AddComment />
+			<CommentsList />
 		</div>
 	);
 };
