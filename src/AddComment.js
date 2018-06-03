@@ -26,12 +26,14 @@ class AddComment extends React.Component {
 	
 	render() {
 		return (
-			<div>
-				<input
+			<div className="comment">
+				<textarea
 					type = "text"
 					placeholder = "new comment"
 					value = {this.state.value}
 					onChange = {this.onChange}
+					rows="3"
+					cols="50"
 					/>
 				<button className = "btn-add" type = "submit" onClick = {this.handleSubmit}>
 					Add Comment
