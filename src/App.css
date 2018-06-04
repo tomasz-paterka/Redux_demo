@@ -38,6 +38,7 @@
 	border: none;
 	margin-top: 20px;
 	color: #fff;
+	cursor: pointer;
 }
 
 ul {
@@ -47,6 +48,7 @@ ul {
 
 .list-item {
 	padding: 15px 0;
+
 }
 
 .list-item button {
@@ -54,7 +56,14 @@ ul {
 	background-color: #DCE35B;
 	border: none;
 	color: #fff;
+	padding: 10px;
+	cursor: pointer;
 }
+
+.list-item .icon-btn {
+	border-radius: 50%;
+}
+
 
 @keyframes App-logo-spin {
 	from {

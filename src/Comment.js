@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Comment = ({text, thumbUp, thumbDown, id, thumbUpComment, thumbDownComment, removeComment, editComment}) => 
-<div className="buttons">
+<div>
 	{text}
 	<li className="list-item">
-		<button onClick={() => thumbUpComment(id)}>Thumb up</button><span>Thumb up: {thumbUp}</span> 
-		<button onClick={() => thumbDownComment(id)}>Thumb down</button><span>Thumb down: {thumbDown}</span> 
+		<button className="icon-btn" onClick={() => thumbUpComment(id)}><i className="fas fa-thumbs-up"></i></button><span>{thumbUp}</span> 
+		<button className="icon-btn" onClick={() => thumbDownComment(id)}><i className="fas fa-thumbs-down"></i></button><span>{thumbDown}</span> 
 		<button onClick={() => editComment(id, prompt('new comment', text))}>Edit</button>
 		<button onClick={() => removeComment(id)}>Delete</button>
 	</li>
